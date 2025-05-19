@@ -5,10 +5,10 @@
         <div class="terms-of-service-content-section section">
             <p class="terms-of-service-section-text">
                 This Agreement is entered into by and these Terms & Conditions (hereinafter referred to as the
-                “Agreement”) shall regulate the relationship between Interactive Capital Pro LTD, (hereinafter referred
+                “Agreement”) shall regulate the relationship between Cytopia Capital LTD, (hereinafter referred
                 to as the
                 “Company”), and the user (a natural or legal entity) (hereinafter referred to as the “Client”) of
-                Interactive Capital Pro (hereinafter referred as the “Website”).
+                Cytopia Capital (hereinafter referred as the “Website”).
             </p>
 
             <p class="terms-of-service-section-text">

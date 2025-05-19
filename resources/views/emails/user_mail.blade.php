@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Capital Pro</title>
+    <title>Cytopia Capital</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,10 +66,10 @@
             <p>Dear User,</p>
             <p>{!! nl2br(e($messageBody)) !!}</p>
             <p>Best Regards,</p>
-            <p><strong>Interactive Capital Pro</strong></p>
+            <p><strong>Cytopia Capital</strong></p>
         </div>
         <div class="footer">
-            <p>&copy; {{ date('Y') }} Interactive Capital Pro. All rights reserved.</p>
+            <p>&copy; {{ date('Y') }} Cytopia Capital. All rights reserved.</p>
         </div>
     </div>
 </body>

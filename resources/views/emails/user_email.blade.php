@@ -471,7 +471,7 @@
                                         <p class="f-fallback sub align-center">&copy; https://astracointrading.com/ All
                                             rights reserved.</p>
                                         <p class="f-fallback sub align-center">
-                                            Interactive Capital Pro
+                                            Cytopia Capital
                                             <br>https://astracointrading.com/
                                         </p>
                                     </td>

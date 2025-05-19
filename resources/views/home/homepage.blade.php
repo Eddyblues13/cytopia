@@ -28,7 +28,8 @@
         <div class="participants-text">1M+ succesful participants</div>
     </div>
 
-    {{-- <!-- Copy Top Investors Section -->
+    {{--
+    <!-- Copy Top Investors Section -->
     <div class="row align-items-center my-5 py-5">
         <div class="col-md-6 position-relative">
             <div class="video-card">
@@ -41,7 +42,7 @@
         <div class="col-md-6">
             <h2 class="section-heading mb-4">Copy top investors</h2>
             <p class="section-text">
-                With Interactive Capital Pro innovative CopyTrader™, you can automatically copy the moves of other
+                With Cytopia Capital innovative CopyTrader™, you can automatically copy the moves of other
                 investors. Find
                 investors you believe in and replicate their actions in real time.
             </p>
@@ -52,7 +53,7 @@
     {{-- <div class="text-center my-5 py-5">
         <h2 class="section-heading mb-5">
             What can you <span class="gradient-trade">Trade</span> with
-            <span class="gradient-brand">Interactive Capital Pro</span>?
+            <span class="gradient-brand">Cytopia Capital</span>?
         </h2>
 
         <div class=" d-flex justify-content-center">
@@ -142,7 +143,7 @@
             </div>
 
             <div class="col-lg-6 d-flex justify-content-center align-items-center px-4">
-                <p class="text-dark fs-5 white-text">Interactive Capital Pro Stock trading offers an exciting
+                <p class="text-dark fs-5 white-text">Cytopia Capital Stock trading offers an exciting
                     opportunity to grow
                     your wealth by investing in companies you believe in. It’s all about buying shares in businesses
                     and benefiting as they grow and succeed.</p>
@@ -163,7 +164,8 @@
         <!-- Secured Card -->
         <div class="col-12">
             <div class="text-center">
-                <img src="{{ asset('assets/img/crypChart.png') }}" alt="Crypto Chart" class="img img-fluid w-75 crypto-chart0">
+                <img src="{{ asset('assets/img/crypChart.png') }}" alt="Crypto Chart"
+                    class="img img-fluid w-75 crypto-chart0">
             </div>
         </div>
     </div>
@@ -185,7 +187,9 @@
                 </div>
                 <h3 class="reason-title">decentralization and independence</h3>
                 <p class="reason-description">
-                    Bitcoin & Co. are not controlled by a central authority or government. This protects against political influences and interventions that can affect the value and stability of traditional currencies.
+                    Bitcoin & Co. are not controlled by a central authority or government. This protects against
+                    political influences and interventions that can affect the value and stability of traditional
+                    currencies.
                 </p>
             </div>
         </div>
@@ -199,7 +203,9 @@
                 </div>
                 <h3 class="reason-title">protection against crises and inflation</h3>
                 <p class="reason-description">
-                    Cryptocurrencies like Bitcoin usually have a fixed supply, which protects them from inflationary tendencies. In times of crisis, they can serve as a safe haven because they operate independently of national monetary and financial systems.
+                    Cryptocurrencies like Bitcoin usually have a fixed supply, which protects them from inflationary
+                    tendencies. In times of crisis, they can serve as a safe haven because they operate independently of
+                    national monetary and financial systems.
                 </p>
             </div>
         </div>
@@ -213,7 +219,8 @@
                 </div>
                 <h3 class="reason-title">High return opportunities</h3>
                 <p class="reason-description">
-                    Bitcoin alone has achieved an average annual return of over 200% since 2014. These impressive gains make cryptocurrencies an incredibly attractive investment option.
+                    Bitcoin alone has achieved an average annual return of over 200% since 2014. These impressive gains
+                    make cryptocurrencies an incredibly attractive investment option.
                 </p>
             </div>
         </div>
@@ -225,11 +232,14 @@
             <div class="reason-card">
                 <div class="card-header">
                     <div class="reason-label">REASON 4</div>
-                    <img src="{{ asset('assets/img/CryReason4.avif') }}" alt="Security Lock" class="reason-icon" style="height: 180px; width: 180px">
+                    <img src="{{ asset('assets/img/CryReason4.avif') }}" alt="Security Lock" class="reason-icon"
+                        style="height: 180px; width: 180px">
                 </div>
                 <h3 class="reason-title">Bitcoin as digital gold</h3>
                 <p class="reason-description">
-                    Bitcoin & Co. are not controlled by a central authority or government. This protects against political influences and interventions that can affect the value and stability of traditional currencies.
+                    Bitcoin & Co. are not controlled by a central authority or government. This protects against
+                    political influences and interventions that can affect the value and stability of traditional
+                    currencies.
                 </p>
             </div>
         </div>
@@ -239,11 +249,14 @@
             <div class="reason-card">
                 <div class="card-header">
                     <div class="reason-label">REASON 5</div>
-                    <img src="https://capitalfidel.com/assets/images/site/CryReason5.avif" alt="Rocket" class="reason-icon" style="height: 180px; width: 180px">
+                    <img src="https://capitalfidel.com/assets/images/site/CryReason5.avif" alt="Rocket"
+                        class="reason-icon" style="height: 180px; width: 180px">
                 </div>
                 <h3 class="reason-title">Growing acceptance as a means of payment</h3>
                 <p class="reason-description">
-                    The acceptance of cryptocurrencies as a means of payment is growing steadily. Companies such as Tesla, PayPal and Microsoft already accept Bitcoin for payments. This increasing use in everyday life increases the legitimacy and trust in cryptocurrencies as a means of payment.
+                    The acceptance of cryptocurrencies as a means of payment is growing steadily. Companies such as
+                    Tesla, PayPal and Microsoft already accept Bitcoin for payments. This increasing use in everyday
+                    life increases the legitimacy and trust in cryptocurrencies as a means of payment.
                 </p>
             </div>
         </div>
@@ -256,11 +269,13 @@
             <div class="reason-card">
                 <div class="card-header">
                     <div class="reason-label">REASON 6</div>
-                    <img src="https://capitalfidel.com/assets/images/site/CryReason6.avif" alt="Security Lock" class="reason-icon" style="height: 180px; width: 180px">
+                    <img src="https://capitalfidel.com/assets/images/site/CryReason6.avif" alt="Security Lock"
+                        class="reason-icon" style="height: 180px; width: 180px">
                 </div>
                 <h3 class="reason-title">Low entry barrier</h3>
                 <p class="reason-description">
-                    Getting started in the crypto market is easy and does not require large investments. Regulated platforms allow even beginners to invest in cryptocurrencies easily and with small amounts.
+                    Getting started in the crypto market is easy and does not require large investments. Regulated
+                    platforms allow even beginners to invest in cryptocurrencies easily and with small amounts.
                 </p>
             </div>
         </div>
@@ -270,11 +285,13 @@
             <div class="reason-card">
                 <div class="card-header">
                     <div class="reason-label">REASON 7</div>
-                    <img src="https://capitalfidel.com/assets/images/site/CryReason7.avif" alt="Rocket" class="reason-icon" style="height: 180px; width: 180px">
+                    <img src="https://capitalfidel.com/assets/images/site/CryReason7.avif" alt="Rocket"
+                        class="reason-icon" style="height: 180px; width: 180px">
                 </div>
                 <h3 class="reason-title">A new era has dawned</h3>
                 <p class="reason-description">
-                    Blockchain technology marks the beginning of a new era that is revolutionizing finance and commerce. These innovations are changing traditional structures and paving the way for a digital future.
+                    Blockchain technology marks the beginning of a new era that is revolutionizing finance and commerce.
+                    These innovations are changing traditional structures and paving the way for a digital future.
                 </p>
             </div>
         </div>
@@ -284,7 +301,7 @@
 
 <div class="container section-container">
     <h2 class="section-reason-title my-5 text-start" style="color: #CBD5E1">
-        Profit from the market in record time with the<span class="gradient-text"> Interactive Capital Pro framework
+        Profit from the market in record time with the<span class="gradient-text"> Cytopia Capital framework
         </span>
 
     </h2>
@@ -293,11 +310,14 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="reason-card">
                 <div class="card-header d-flex justify-content-start">
-                    <img src="https://capitalfidel.com/assets/images/site/CryIcon3.avif" alt="Bitcoin" class="reason-icon" style="width: 70px; height: 70px;">
+                    <img src="https://capitalfidel.com/assets/images/site/CryIcon3.avif" alt="Bitcoin"
+                        class="reason-icon" style="width: 70px; height: 70px;">
                 </div>
                 <h3 class="reason-title">Learn to recognize and understand market movements</h3>
                 <p class="reason-description">
-                    Achieve better returns through superior market understanding. Those who can read price movements profit. We show you how to precisely find the best entry and exit points. This way you can generate regular income regardless of the market situation.
+                    Achieve better returns through superior market understanding. Those who can read price movements
+                    profit. We show you how to precisely find the best entry and exit points. This way you can generate
+                    regular income regardless of the market situation.
                 </p>
             </div>
         </div>
@@ -305,26 +325,32 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="reason-card">
                 <div class="card-header d-flex justify-content-start">
-                    <img src="https://capitalfidel.com/assets/images/site/CryIcon1.avif" alt="Bitcoin" class="reason-icon" style="width: 70px; height: 70px;">
+                    <img src="https://capitalfidel.com/assets/images/site/CryIcon1.avif" alt="Bitcoin"
+                        class="reason-icon" style="width: 70px; height: 70px;">
                 </div>
                 <h3 class="reason-title">Understanding Bitcoin & Blockchain</h3>
                 <p class="reason-description">
-                    Only those who truly understand blockchain technology can benefit from the next big crypto trends. We will show you how blockchain works, how it is changing the financial markets for the long term and how you can profit from it to the maximum.
+                    Only those who truly understand blockchain technology can benefit from the next big crypto trends.
+                    We will show you how blockchain works, how it is changing the financial markets for the long term
+                    and how you can profit from it to the maximum.
                 </p>
             </div>
-        </div> 
-        
+        </div>
+
         <div class="col-12 col-md-6 col-lg-4">
             <div class="reason-card">
                 <div class="card-header d-flex justify-content-start">
-                    <img src="https://capitalfidel.com/assets/images/site/CryIcon4.avif" alt="Bitcoin" class="reason-icon" style="width: 70px; height: 70px;">
+                    <img src="https://capitalfidel.com/assets/images/site/CryIcon4.avif" alt="Bitcoin"
+                        class="reason-icon" style="width: 70px; height: 70px;">
                 </div>
                 <h3 class="reason-title">Proven Strategies & Systematization</h3>
                 <p class="reason-description">
-                    The last step to be 3 steps ahead of the other market participants: systematize your trading strategy to ensure success in the coming years. This will protect your capital and build wealth sustainably.
+                    The last step to be 3 steps ahead of the other market participants: systematize your trading
+                    strategy to ensure success in the coming years. This will protect your capital and build wealth
+                    sustainably.
                 </p>
             </div>
-        </div> 
+        </div>
     </div>
 </div>
 
@@ -344,7 +370,7 @@
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            How to start trading with Interactive Capital Pro?
+                            How to start trading with Cytopia Capital?
 
                         </button>
                     </h2>
@@ -353,7 +379,7 @@
                         <div class="accordion-body">
                             Create An Account.
                             Confirm your identity and eligibility for a financial account (KYC).
-                            Fund your Interactive Capital Pro Trading account by connecting your digital wallet.
+                            Fund your Cytopia Capital Trading account by connecting your digital wallet.
                             Login and start trading.
 
                         </div>
@@ -371,14 +397,14 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#faqAccordion1">
                         <div class="accordion-body">
-                            Click the Sign-Up Button to sign up for an account with Interactive Capital Pro.
+                            Click the Sign-Up Button to sign up for an account with Cytopia Capital.
                             Please complete the form, read the terms and conditions, and click the Sign-Up button.
                             You’ll receive an email with a unique verification link.
                             Verify by clicking or copying/pasting the link to your browser URL. (If you can’t find
                             the email, look in your junk mail, spam, and any other folders your inbox may have. If,
                             for some reason, you still don’t receive the email and would like to resend, visit the
                             login page and click on Resend verification email. Enter your email and click ‘Send
-                            Confirmation Email’). Once verified, you can log in to yourInteractive Capital Pro account
+                            Confirmation Email’). Once verified, you can log in to yourCytopia Capital account
                             and
                             verify your identity.
 
@@ -414,13 +440,13 @@
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            How do I deposit money and fund my account with Interactive Capital Pro?
+                            How do I deposit money and fund my account with Cytopia Capital?
                         </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#faqAccordion1">
                         <div class="accordion-body">
-                            You are given a personal dashboard when you create your Interactive Capital ProAccount.
+                            You are given a personal dashboard when you create your Cytopia CapitalAccount.
                             Follow your
                             account’s on-screen instructions, depending on the payment method chosen (Bitcoin or
                             USDT). The options available to you will be shown. Select “Deposit” in the left hand
@@ -434,7 +460,7 @@
                     <h2 class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Is Interactive Capital Pro a regulated broker?
+                            Is Cytopia Capital a regulated broker?
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
@@ -452,7 +478,7 @@
                     <h2 class="accordion-header" id="headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            How to withdraw money from Interactive Capital Pro?
+                            How to withdraw money from Cytopia Capital?
                         </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"

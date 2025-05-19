@@ -13,7 +13,7 @@
     <meta name="google" content="noindex, nofollow">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Interactive Capital Pro - Sign In</title>
+    <title>Cytopia Capital - Sign In</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link

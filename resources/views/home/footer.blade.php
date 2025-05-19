@@ -1,6 +1,6 @@
 <footer class="footer mx-2">
     <div class="footer-content">
-        <div class="brand">Interactive Capital Pro</div>
+        <div class="brand">Cytopia Capital</div>
 
         <div class="row">
             <div class="col-6 col-md-4 mb-5">
@@ -11,11 +11,11 @@
                 <p><a href="{{ url('/msft-chart') }}">Microsoft</a></p>
             </div>
             <div class="col-6 col-md-4 mb-5">
-                    <h6>Learn More</h6>
-                    <p><a href="{{ url('/about') }}">About Us</a></p>
-                    <p><a href="{{ url('/what-is-leverage') }}">What is Leverage</a></p>
-                    <p><a href="{{ url('/responsible-trading') }}">Responsible Trading</a></p>
-                    <p><a href="{{ url('/copy-trade') }}">How Copy Trading Works</a></p>
+                <h6>Learn More</h6>
+                <p><a href="{{ url('/about') }}">About Us</a></p>
+                <p><a href="{{ url('/what-is-leverage') }}">What is Leverage</a></p>
+                <p><a href="{{ url('/responsible-trading') }}">Responsible Trading</a></p>
+                <p><a href="{{ url('/copy-trade') }}">How Copy Trading Works</a></p>
             </div>
             <div class="col-6 col-md-4 mb-5">
                 <h6>Privacy</h6>
@@ -27,7 +27,7 @@
         </div>
 
         <div class="footer-bottom">
-            <div class="copyright">Copyright © 2024 by Interactive Capital Pro</div>
+            <div class="copyright">Copyright © 2025 by Cytopia Capital</div>
         </div>
     </div>
     <div class="glow-arc"></div>
