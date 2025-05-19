@@ -60,7 +60,7 @@
                 agreements. We may rectify, replenish, or remove incomplete or inaccurate information at any time and at
                 our own discretion. If you wish to raise a complaint on how we have handled your Personal Information,
                 please contact us directly at <a
-                    href="mailto:support@interactivecapitalpro.com">support@interactivecapitalpro.com</a>. If
+                    href="mailto:support@cytopiacapital.com">support@cytopiacapital.com</a>. If
                 you are not satisfied with our response or believe we are collecting or processing your Personal
                 Information not in accordance with the laws, you can complain to the applicable data protection
                 authority.
@@ -75,7 +75,7 @@
                 make no warranty, express, implied, or otherwise, that we will prevent such access. If you feel that
                 your privacy was treated not in accordance with our policy, or if any person attempted to abuse the
                 Services or acted in an inappropriate manner, please contact us directly at <a
-                    href="mailto:support@interactivecapitalpro.com">support@interactivecapitalpro.com</a>.
+                    href="mailto:support@cytopiacapital.com">support@cytopiacapital.com</a>.
             </p>
 
             <h5 class="privacy-policy-section-title">Advertisements</h5>

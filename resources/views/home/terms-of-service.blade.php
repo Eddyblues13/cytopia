@@ -48,8 +48,8 @@
 
             <p class="terms-of-service-section-text">
                 A client that is a legal entity can register with the Company not through the Website but by sending an
-                email with its request to <a
-                    href="mailto:support@interactivecapitalpro.com">support@interactivecapitalpro.com</a>. All
+                email with its request to <a href="mailto:support@cytopiacapital.com">support@cytopiacapital.com</a>.
+                All
                 terms and conditions contained herein, including without limitation to sections 1 to 5 above, shall at
                 all times be applicable to the Legal Entity, and the latter shall conform with such terms and
                 conditions, obligations, and rights at all times.
@@ -840,7 +840,7 @@
                 <li>It is prohibited to abuse any of the privileges provided by the Company (e.g., creating multiple
                     trading accounts to claim these Benefits).</li>
                 <li>The client may submit a request to <a
-                        href="mailto:support@interactivecapitalpro.com">support@interactivecapitalpro.com</a> to stop
+                        href="mailto:support@cytopiacapital.com">support@cytopiacapital.com</a> to stop
                     receiving such
                     Benefits at any time.</li>
             </ul>
