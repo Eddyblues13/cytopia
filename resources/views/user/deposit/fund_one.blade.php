@@ -2,7 +2,7 @@
 <!-- Main Content -->
 <div class="depost-form-main">
     <h1 class="heading text-white">Fund Account</h1>
-    <a href="#" class="view-pricing">VIEW PRICING</a>
+    <a href="#" class="view-pricing">View PRICING</a>
 
     <div class="fund-card">
         <div class="input-group">
