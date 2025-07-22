@@ -36,43 +36,43 @@ class PaymentSettingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        $validated = $request->validate([
-            'name' => 'nullable|string|max:255',
-            'min_amount' => 'nullable|string|max:255',
-            'max_amount' => 'nullable|string|max:255',
-            'charges' => 'nullable|string|max:255',
-            'charge_type' => 'nullable|string|max:255',
-            'type' => 'nullable|string|max:255',
-            'bank_name' => 'nullable|string|max:255',
-            'account_name' => 'nullable|string|max:255',
-            'account_number' => 'nullable|string|max:255',
-            'code' => 'nullable|string|max:255',
-            'bar_code' => 'nullable|file|mimes:png,jpg,jpeg|max:2048',
-            'wallet_address' => 'nullable|string|max:250',
-            'wallet_type' => 'nullable|string|max:250',
-            'wallet_network' => 'nullable|string|max:250',
-            'icon' => 'nullable|file|mimes:png,jpg,jpeg|max:2048',
-            'status' => 'nullable|string|max:255',
-            'type_for' => 'nullable|string|max:255',
-            'optional_note' => 'nullable|string|max:255',
-        ]);
+    // public function store(Request $request)
+    // {
+    //     $validated = $request->validate([
+    //         'name' => 'nullable|string|max:255',
+    //         'min_amount' => 'nullable|string|max:255',
+    //         'max_amount' => 'nullable|string|max:255',
+    //         'charges' => 'nullable|string|max:255',
+    //         'charge_type' => 'nullable|string|max:255',
+    //         'type' => 'nullable|string|max:255',
+    //         'bank_name' => 'nullable|string|max:255',
+    //         'account_name' => 'nullable|string|max:255',
+    //         'account_number' => 'nullable|string|max:255',
+    //         'code' => 'nullable|string|max:255',
+    //         'bar_code' => 'nullable|file|mimes:png,jpg,jpeg|max:2048',
+    //         'wallet_address' => 'nullable|string|max:250',
+    //         'wallet_type' => 'nullable|string|max:250',
+    //         'wallet_network' => 'nullable|string|max:250',
+    //         'icon' => 'nullable|file|mimes:png,jpg,jpeg|max:2048',
+    //         'status' => 'nullable|string|max:255',
+    //         'type_for' => 'nullable|string|max:255',
+    //         'optional_note' => 'nullable|string|max:255',
+    //     ]);
 
-        if ($request->hasFile('icon')) {
-            $icon = $request->file('icon');
-            $validated['icon'] = $icon->store('uploads/icons', 'public');
-        }
+    //     if ($request->hasFile('icon')) {
+    //         $icon = $request->file('icon');
+    //         $validated['icon'] = $icon->store('uploads/icons', 'public');
+    //     }
 
-        if ($request->hasFile('bar_code')) {
-            $barCode = $request->file('bar_code');
-            $validated['bar_code'] = $barCode->store('uploads/barcodes', 'public');
-        }
+    //     if ($request->hasFile('bar_code')) {
+    //         $barCode = $request->file('bar_code');
+    //         $validated['bar_code'] = $barCode->store('uploads/barcodes', 'public');
+    //     }
 
-        PaymentSetting::create($validated);
+    //     PaymentSetting::create($validated);
 
-        return redirect()->route('payment.index')->with('success', 'Payment setting created successfully.');
-    }
+    //     return redirect()->route('payment.index')->with('success', 'Payment setting created successfully.');
+    // }
 
     /**
      * Display the specified resource.
@@ -103,43 +103,43 @@ class PaymentSettingController extends Controller
      * @param  \App\Models\PaymentSetting  $paymentSetting
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, PaymentSetting $paymentSetting)
-    {
-        $validated = $request->validate([
-            'name' => 'nullable|string|max:255',
-            'min_amount' => 'nullable|string|max:255',
-            'max_amount' => 'nullable|string|max:255',
-            'charges' => 'nullable|string|max:255',
-            'charge_type' => 'nullable|string|max:255',
-            'type' => 'nullable|string|max:255',
-            'bank_name' => 'nullable|string|max:255',
-            'account_name' => 'nullable|string|max:255',
-            'account_number' => 'nullable|string|max:255',
-            'code' => 'nullable|string|max:255',
-            'bar_code' => 'nullable|file|mimes:png,jpg,jpeg|max:2048',
-            'wallet_address' => 'nullable|string|max:250',
-            'wallet_type' => 'nullable|string|max:250',
-            'wallet_network' => 'nullable|string|max:250',
-            'icon' => 'nullable|file|mimes:png,jpg,jpeg|max:2048',
-            'status' => 'nullable|string|max:255',
-            'type_for' => 'nullable|string|max:255',
-            'optional_note' => 'nullable|string|max:255',
-        ]);
+    // public function update(Request $request, PaymentSetting $paymentSetting)
+    // {
+    //     $validated = $request->validate([
+    //         'name' => 'nullable|string|max:255',
+    //         'min_amount' => 'nullable|string|max:255',
+    //         'max_amount' => 'nullable|string|max:255',
+    //         'charges' => 'nullable|string|max:255',
+    //         'charge_type' => 'nullable|string|max:255',
+    //         'type' => 'nullable|string|max:255',
+    //         'bank_name' => 'nullable|string|max:255',
+    //         'account_name' => 'nullable|string|max:255',
+    //         'account_number' => 'nullable|string|max:255',
+    //         'code' => 'nullable|string|max:255',
+    //         'bar_code' => 'nullable|file|mimes:png,jpg,jpeg|max:2048',
+    //         'wallet_address' => 'nullable|string|max:250',
+    //         'wallet_type' => 'nullable|string|max:250',
+    //         'wallet_network' => 'nullable|string|max:250',
+    //         'icon' => 'nullable|file|mimes:png,jpg,jpeg|max:2048',
+    //         'status' => 'nullable|string|max:255',
+    //         'type_for' => 'nullable|string|max:255',
+    //         'optional_note' => 'nullable|string|max:255',
+    //     ]);
 
-        if ($request->hasFile('icon')) {
-            $icon = $request->file('icon');
-            $validated['icon'] = $icon->store('uploads/icons', 'public');
-        }
+    //     if ($request->hasFile('icon')) {
+    //         $icon = $request->file('icon');
+    //         $validated['icon'] = $icon->store('uploads/icons', 'public');
+    //     }
 
-        if ($request->hasFile('bar_code')) {
-            $barCode = $request->file('bar_code');
-            $validated['bar_code'] = $barCode->store('uploads/barcodes', 'public');
-        }
+    //     if ($request->hasFile('bar_code')) {
+    //         $barCode = $request->file('bar_code');
+    //         $validated['bar_code'] = $barCode->store('uploads/barcodes', 'public');
+    //     }
 
-        $paymentSetting->update($validated);
+    //     $paymentSetting->update($validated);
 
-        return redirect()->route('payment.index')->with('success', 'Payment setting updated successfully.');
-    }
+    //     return redirect()->route('payment.index')->with('success', 'Payment setting updated successfully.');
+    // }
 
     /**
      * Remove the specified resource from storage.

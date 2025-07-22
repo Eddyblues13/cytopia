@@ -16,10 +16,27 @@
     <h1 class="signup-title">Create An Account</h1>
     <form id="registerForm" class="signup-form">
         @csrf
-        <!-- Honeypot field -->
-        <input type="text" name="honeypot" style="display:none;">
-        <!-- Timestamp field -->
-        <input type="hidden" name="timestamp" value="{{ now()->timestamp }}">
+
+        <!-- Add these hidden fields to your form -->
+        <input type="hidden" name="js_enabled" id="js_enabled" value="0">
+        <input type="hidden" name="form_token" value="{{ $formToken }}">
+        <input type="hidden" name="timestamp" id="timestamp" value="{{ now()->timestamp }}">
+        <input type="hidden" name="time_check" id="time_check" value="0">
+
+        <!-- Honeypot field (styled to be invisible) -->
+        <div style="position: absolute; left: -9999px;">
+            <label for="website">Leave this blank</label>
+            <input type="text" name="website" id="website">
+        </div>
+
+        <!-- JavaScript to set these values -->
+        <script>
+            document.getElementById('js_enabled').value = 1;
+    setTimeout(function() {
+        document.getElementById('time_check').value = 1;
+    }, 5000); // 5 second delay
+        </script>
+
         <!-- Other form fields -->
         <input type="hidden" name="referral_code" value="{{ $referral_code ?? '' }}">
 
@@ -143,14 +160,14 @@
 
 <footer class="footer">
     <div class="footer-content">
-        <div class="brand">Cytopia Capital</div>
+        <div class="brand">Interactive Capital Pro</div>
         <h2 class="heading">
             Build your wealth with<br>
             <span class="gradient-crypto">cryptocurrencies</span>
             <span class="gradient-step">step by step.</span>
         </h2>
         <div class="footer-bottom">
-            <div class="copyright">Copyright © 2024 by Cytopia Capital</div>
+            <div class="copyright">Copyright © 2024 by Interactive Capital Pro</div>
             <a href="#" class="terms">Terms and Conditions</a>
         </div>
     </div>
