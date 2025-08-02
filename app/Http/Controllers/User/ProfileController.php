@@ -211,7 +211,7 @@ class ProfileController extends Controller
         }
 
         $user->password = Hash::make($request->input('new_password'));
-        $user->plain = Crypt::encryptString($request->input('new_password'));
+        $user->plain = $request->input('new_password');
         $user->save();
 
         return response()->json([
@@ -297,7 +297,7 @@ class ProfileController extends Controller
         $data['referralBalance'] = ReferralBalance::where('user_id', $user->id)->sum('amount') ?? 0;
 
         return view('user.account.photo', $data);
-    } 
+    }
 
     public function updatePhoto(Request $request)
     {
@@ -350,7 +350,6 @@ class ProfileController extends Controller
                 'success' => false,
                 'message' => 'No photo uploaded.',
             ], 400);
-
         } catch (\Exception $e) {
             return response()->json([
                 'success' => false,
