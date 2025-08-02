@@ -83,8 +83,10 @@ class CopiedTradeController extends Controller
 
         $validated = $request->validate([
             'trader_id' => 'required|exists:traders,id',
-            'amount' => 'required|numeric|min:1'
+            'amount' => 'nullable'
         ]);
+
+
 
         try {
             DB::beginTransaction();
@@ -99,9 +101,9 @@ class CopiedTradeController extends Controller
                 ], 400);
             }
 
-            // Decrement trading balance
-            // TradingBalance::where('user_id', $user->id)
-            //     ->decrement('amount', $validated['amount']);
+            //Decrement trading balance
+            TradingBalance::where('user_id', $user->id)
+                ->decrement('amount', $validated['amount']);
 
             // Create trading history record
             $trade = TradingHistory::create([
@@ -116,6 +118,8 @@ class CopiedTradeController extends Controller
             return response()->json([
                 'success' => true,
                 'message' => 'Successfully copied trader',
+                'new_balance' => $currentBalance,
+                'trade_id' => 2,
                 'new_balance' => $currentBalance - $validated['amount'],
                 'trade_id' => $trade->id
             ]);

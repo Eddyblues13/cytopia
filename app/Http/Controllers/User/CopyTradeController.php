@@ -50,8 +50,9 @@ class CopyTradeController extends Controller
 
         $validated = $request->validate([
             'trader_id' => 'required|exists:traders,id',
-            'amount' => 'required|numeric|min:1'
+            'amount' => 'nullable'
         ]);
+
 
         $traderId = $validated['trader_id'];
         $amount = $validated['amount'];
@@ -84,7 +85,7 @@ class CopyTradeController extends Controller
             }
 
             // Decrement the balance
-            // $balanceRecord->decrement('amount', $amount);
+            $balanceRecord->decrement('amount', $amount);
 
             // Record the transaction
             $transaction = TradingHistory::create([
@@ -97,8 +98,8 @@ class CopyTradeController extends Controller
 
             DB::commit();
 
-            // $newBalance = $currentBalance - $amount;
-            $newBalance = $currentBalance;
+            $newBalance = $currentBalance - $amount;
+
 
             return response()->json([
                 'success' => true,

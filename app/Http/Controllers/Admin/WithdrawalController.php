@@ -9,9 +9,15 @@ use App\Http\Controllers\Controller;
 
 class WithdrawalController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $withdrawals = Withdrawal::with('user')->latest()->get();
+        $withdrawals = Withdrawal::with('user')
+            ->when($request->status, function ($query) use ($request) {
+                return $query->where('status', $request->status);
+            })
+            ->latest()
+            ->paginate(10000000); // Adjust pagination count as needed
+
         return view('admin.withdrawals.index', compact('withdrawals'));
     }
 
@@ -55,13 +61,13 @@ class WithdrawalController extends Controller
             }
 
             // Refund the amount if rejected
-            $user = User::find($withdrawal->user_id);
-            if ($withdrawal->account_type == 'crypto') {
-                $user->crypto_balance += $withdrawal->amount;
-            } else {
-                $user->balance += $withdrawal->amount;
-            }
-            $user->save();
+            // $user = User::find($withdrawal->user_id);
+            // if ($withdrawal->account_type == 'crypto') {
+            //     $user->crypto_balance += $withdrawal->amount;
+            // } else {
+            //     $user->balance += $withdrawal->amount;
+            // }
+            // $user->save();
 
             // Update withdrawal status
             $withdrawal->update(['status' => 'rejected']);

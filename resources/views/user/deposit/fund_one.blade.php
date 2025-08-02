@@ -2,13 +2,15 @@
 <!-- Main Content -->
 <div class="depost-form-main">
     <h1 class="heading text-white">Fund Account</h1>
-    <a href="#" class="view-pricing">View PRICING</a>
+    <a href="#" class="view-pricing">VIEW PRICING</a>
 
     <div class="fund-card">
+
         <div class="input-group">
             <div class="input-label">Amount ({{ config('currencies.' . auth()->user()->currency, '$') }})</div>
-            <input type="text" class="amount-input" id="amount" value="0" required>
+            <input type="number" class="amount-input" id="amount" value="1000" min="1000" required>
         </div>
+
         <div class="input-group">
             <div class="input-label">Account</div>
             <select class="select-account" id="account" name="account" required>

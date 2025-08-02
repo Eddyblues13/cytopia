@@ -26,7 +26,7 @@
     <!-- Smartsupp Live Chat script -->
     <script type="text/javascript">
         var _smartsupp = _smartsupp || {};
-_smartsupp.key = '6ace84c6f473b0560c197b7390e84a321a04530d';
+_smartsupp.key = '6cad4f45ec2dc44e805e6f15b64aff82bb39d26b';
 window.smartsupp||(function(d) {
   var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
   s=d.getElementsByTagName('script')[0];c=d.createElement('script');
@@ -35,6 +35,7 @@ window.smartsupp||(function(d) {
 })(document);
     </script>
     <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
 </head>
 
 <body>
@@ -58,7 +59,7 @@ window.smartsupp||(function(d) {
         <div class="profile-section mb-0 d-flex">
             <div class="d-block align-items-center text-center gap-3">
                 <div class="profile-image py-4"><img
-                        src="{{ Auth::user()->profile_photo ? asset(Auth::user()->profile_photo) : asset('assets/img/human.png') }}"
+                        src="{{ Auth::user()->profile_photo_url ? asset(Auth::user()->profile_photo_url) : asset('assets/img/human.png') }}"
                         alt=""></div>
                 <div>
                     <div class="fw-bold text-white">{{Auth::user()->first_name}}

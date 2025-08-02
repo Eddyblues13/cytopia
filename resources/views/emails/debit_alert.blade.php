@@ -272,7 +272,7 @@
 					<td class="proton-td" colspan="10" style="">
 						<div class="proton-divider"></div>
 						<center>
-							<span style="color: #706d6b"> © 2024 Cytopia Capital</span>
+							<span style="color: #706d6b"> © 2023 Cytopia Capital</span>
 						</center>
 						<div class="proton-flex">
 							<a href="https://proton.me" class="proton-link">

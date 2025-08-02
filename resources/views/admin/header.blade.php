@@ -99,6 +99,7 @@
             text-align: center;
         }
     </style>
+
 </head>
 
 <body data-background-color="dark">

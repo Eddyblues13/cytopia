@@ -27,7 +27,7 @@
                     <div class="row align-items-center">
                         <!-- Left Column with Image and Button -->
                         <div class="col-md-3 text-center">
-                            <img src="{{ asset($trader->picture) }}" alt="{{ $trader->name }}"
+                            <img src="{{ asset($trader->picture_url) }}" alt="{{ $trader->name }}"
                                 class="profile-image mb-3 rounded-circle" width="100">
                             <button class="btn btn-primary copy-button w-100 py-2" data-trader-id="{{ $trader->id }}"
                                 data-min-amount="{{ $trader->min_amount }}" data-trader-name="{{ $trader->name }}">
@@ -59,20 +59,20 @@
                                         <div class="stat-value text-success">{{ $trader->return_rate }}%</div>
                                         <div class="stat-label">Avg. Return</div>
                                     </div>
-                                    <div class="col-md-4 stat-item">
+                                    {{-- <div class="col-md-4 stat-item">
                                         <div class="stat-value text-info">{{ number_format($trader->followers) }}</div>
                                         <div class="stat-label">Followers</div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-4 stat-item">
                                         <div class="stat-value text-warning">{{ $trader->profit_share }}%</div>
                                         <div class="stat-label">Profit Share</div>
                                     </div>
                                 </div>
 
-                                <div class="mt-3">
+                                {{-- <div class="mt-3">
                                     <small class="text-muted">Min. Investment: ${{ number_format($trader->min_amount, 2)
                                         }}</small>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -158,6 +158,69 @@ toastr.options = {
     "positionClass": "toast-top-right",
     "timeOut": "5000"
 };
+</script>
+
+
+<script>
+    $(document).ready(function() {
+        // Search functionality
+        $('#searchInput').on('input', function() {
+            const searchQuery = this.value.toLowerCase();
+            $('.trader-card-wrapper').each(function() {
+                const traderName = $(this).find('.h4').text().toLowerCase();
+                $(this).toggle(traderName.includes(searchQuery));
+            });
+        });
+
+        // Copy trade functionality
+        $('.copy-button').on('click', function() {
+            const button = $(this);
+            const traderId = button.data('trader-id');
+            const amount = parseFloat(button.data('min-amount'));
+            
+            button.prop('disabled', true).html('<i class="fas fa-spinner fa-spin"></i> Processing...');
+
+            $.ajax({
+                url: '{{ route("copy.trader") }}',
+                type: 'POST',
+                data: {
+                    trader_id: traderId,
+                    amount: amount,
+                    _token: '{{ csrf_token() }}'
+                },
+                success: function(response) {
+                    if (response.success) {
+                        button.removeClass('btn-primary')
+                             .addClass('btn-success')
+                             .html('<i class="fas fa-check"></i> Copied');
+                        
+                        // Update balance display
+                        if (response.new_balance !== undefined) {
+                            $('#currentTradingBalance').text(response.new_balance.toFixed(2));
+                        }
+                        
+                        toastr.success(response.message);
+                    } else {
+                        toastr.error(response.message);
+                        button.prop('disabled', false).text('COPY TRADE');
+                    }
+                },
+                error: function(xhr) {
+                    const errorMsg = xhr.responseJSON?.message || 'Failed to process request';
+                    toastr.error(errorMsg);
+                    button.prop('disabled', false).text('COPY TRADE');
+                }
+            });
+        });
+    });
+
+    // Initialize Toastr
+    toastr.options = {
+        "closeButton": true,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "timeOut": "5000"
+    };
 </script>
 
 <style>
