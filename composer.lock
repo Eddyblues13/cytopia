@@ -3257,8 +3257,8 @@
             "description": "An Cytopia shell for modern PHP.",
             "homepage": "http://psysh.org",
             "keywords": [
-                "REPL",
                 "Cytopia",
+                "REPL",
                 "console",
                 "shell"
             ],
